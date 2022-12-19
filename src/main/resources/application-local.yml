@@ -1,0 +1,18 @@
+spring:
+  datasource:
+    driver: org.postgresql.Driver
+    url: jdbc:postgresql://localhost:5433/desafio_service
+    username: desafio_service
+    password: desafio_service
+  jpa:
+    database-platform: org.hibernate.dialect.PostgreSQLDialect
+    properties:
+      hibernate:
+        ddl-auto: create-drop
+        format_sql: false
+    show-sql: true
+
+logging:
+  level:
+    root: INFO
+    com.exacta.desafio: INFO
